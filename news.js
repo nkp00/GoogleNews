@@ -30,6 +30,7 @@ newsapi.v2
       };
     });
 
+    // save function to save the data to dataBase
     let save = function () {
       let params = {
         TableName: "newsList",
@@ -47,5 +48,5 @@ newsapi.v2
     save();
   })
   .catch((error) => {
-    console.log(error.message);
+    console.log(error.message); // the api itself provide the reason and solution.
   });
